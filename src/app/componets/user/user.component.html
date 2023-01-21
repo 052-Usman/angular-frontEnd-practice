@@ -1,0 +1,17 @@
+<div *ngIf="showAddUser">
+
+    <div class="user" *ngFor="let users of users">
+        <h6 class="container-fluid">
+            {{users.name}}
+        </h6>
+        <p class="container-fluid">
+            {{users.email}}
+        </p>
+    </div>
+
+</div>
+<div *ngIf="!showAddUser">
+    <p class="text-centre">
+        click above button to show users!
+    </p>
+</div>

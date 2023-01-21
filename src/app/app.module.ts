@@ -10,6 +10,9 @@ import { ProfileComponent } from './componets/profile/profile.component';
 import { HomeComponent } from './componets/home/home.component';
 import { TaskComponent } from './componets/task/task.component';
 import { AboutComponent } from './componets/about/about.component';
+import { HeaderComponent } from './componets/header/header.component';
+import { ButtonComponent } from './componets/button/button.component';
+import { UserComponent } from './componets/user/user.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { AboutComponent } from './componets/about/about.component';
     HomeComponent,
     TaskComponent,
     AboutComponent,
+    HeaderComponent,
+    ButtonComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
