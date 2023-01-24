@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +18,7 @@ import { AboutComponent } from './componets/about/about.component';
 import { HeaderComponent } from './componets/header/header.component';
 import { ButtonComponent } from './componets/button/button.component';
 import { UserComponent } from './componets/user/user.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,6 +35,9 @@ import { UserComponent } from './componets/user/user.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
     NgbModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
@@ -39,6 +47,7 @@ import { UserComponent } from './componets/user/user.component';
       { path: 'task', component: TaskComponent },
       { path: 'about', component: AboutComponent },
     ]),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

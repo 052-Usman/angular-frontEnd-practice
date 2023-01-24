@@ -1,0 +1,19 @@
+/* Structure */
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+mat-form-field{
+  margin-top: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+mat-row, mat-header-row  {
+  border-left: 10px solid green;
+}

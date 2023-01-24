@@ -34,15 +34,15 @@
     <h4>
         User Details
     </h4>
-    <div class="user" class="shadow p-3 mb-5 bg-white rounded">
+    <div *ngFor="let i of userArray" class="user" class="shadow p-3 mb-5 bg-white rounded">
         <h5 id="name" class="container-fluid">
-            {{name}}
+            {{'Name: '+i.name}}
         </h5>
         <p id="email" class="container-fluid">
-            {{email}}
+            {{'Email: '+i.email}}
         </p>
         <p id="age" class="container-fluid">
-            {{age}}
+            {{'Age: '+i.age}}
         </p>
     </div>
 </div>
